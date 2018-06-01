@@ -28,6 +28,15 @@
             $('.scrollup').click(function() { $.scrollTo($('#hd'), 700); });
     			}
     			);
+
+          //znikanie i pojawianie scrolla (po przewinieciu o min. 500px)
+      		$(window).scroll(function()
+      		{
+      			if($(this).scrollTop()>200) $('.scrollup').fadeIn();
+      			else $('.scrollup').fadeOut();
+      		}
+      		);
+
     </script>
 
   </head>

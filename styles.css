@@ -126,4 +126,5 @@ p {
   right: 50px;
   bottom: 50px;
   opacity: 0.5;
+  display: none;
 }
