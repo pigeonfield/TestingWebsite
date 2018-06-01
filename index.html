@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="styles.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
     <script src="jquery.scrollTo.min.js"></script>
@@ -20,8 +19,13 @@
     		jQuery(function($)
     		{
     				$.scrollTo(0);  //reset scrolla
-    				$('#link2').click(function() { $.scrollTo($('#gal'), 500); });
+    				$('#link1').click(function() { $.scrollTo($('#about'), 500); });
+            $('#link2').click(function() { $.scrollTo($('#map'), 500); });
+            $('#link3').click(function() { $.scrollTo($('#blog'), 500); });
+            $('#link4').click(function() { $.scrollTo($('#gal'), 500); });
+            $('#link5').click(function() { $.scrollTo($('#contact'), 500); });
 
+            $('.scrollup').click(function() { $.scrollTo($('#hd'), 700); });
     			}
     			);
     </script>
@@ -31,27 +35,32 @@
   <body>
 
     <div id="container">
-        <header>
+
+        <a href="#" class="scrollup"></a>
+
+        <header id="hd">
           <div class="header-text">
             <h1>Here is the header</h1>
-            <center><a id="link2" href="#">Watch the gallery!!</a></center>
+            <center><a id="link4" href="#">Watch the gallery!!</a></center>
 
           </div>
+
+
 
         </header>
 
         <div class="about">
           <article>
-            <h2>Here is the About</h2>
+            <h2 id="about">Here is the About</h2>
           </article>
         </div>
 
         <div class="map">
-          <h2>Here is the Map</h2>
+          <h2 id="map">Here is the Map</h2>
         </div>
 
         <div class="blog">
-          <h2>Here is the Blog</h2>
+          <h2 id="blog">Here is the Blog</h2>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -148,7 +157,7 @@
         </div>
 
         <footer>
-          <h1>Here is the footer</h1>
+          <h1 id="contact">Here is the footer</h1>
               <div class="content">
 
                 <ul>
