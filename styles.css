@@ -39,7 +39,7 @@ a:focus {
 main {
   margin-left: 0px;
   margin-right: 0px;
-
+  margin-top: 0px;
 }
 
 header {
@@ -51,8 +51,8 @@ header {
 }
 
 .header-text {
-  padding-top: 180px;
-  padding-bottom: 180px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .about {
@@ -124,4 +124,23 @@ p {
   bottom: 50px;
   opacity: 0.5;
   display: none;
+}
+
+
+nav {
+  background-color: #bfbfbf;
+  text-align: center;;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0px;
+  padding: 10px;
+  font-size: 18px;
+  min-height: 40px;
+  line-height: 200%;
+}
+
+.menu > li {
+  display: inline-block;
 }
