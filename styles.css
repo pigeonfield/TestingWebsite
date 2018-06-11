@@ -11,28 +11,43 @@ body {
 
 h1, h2 {
   text-align: center;
-  opacity: 0.5;
+
 }
 
 h1 {
-  font-size:120px;
+  font-size:80px;
+
 }
 
 h2 {
   font-size:40px;
 }
 
-a {
-  font-size: 20px;
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
-  color: #ffffff;
+h1.headertext {
+  font-size:80px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  opacity: 0.5;
 }
 
-a:hover,
-a:focus {
+a:link {
   color: #ffffff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #485b3b;
+  text-decoration: none;
+}
+
+a:active {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 
@@ -40,6 +55,7 @@ main {
   margin-left: 0px;
   margin-right: 0px;
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 header {
@@ -50,10 +66,7 @@ header {
   height: 600px;
 }
 
-.header-text {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
+
 
 .about {
   background-image: url('about.jpg');
@@ -78,17 +91,39 @@ header {
 .blog {
   background: #b3b3b3;
   width:100%;
-
+  margin-left: auto;
+  margin-right: auto;
   clear: both;
   float: left;
+  text-align: center;
 }
 
 .gallery {
+
   background: #999999;
   width:100%;
-
+  margin-left: auto;
+  margin-right: auto;
   clear: both;
-  float: left;
+  text-align: center;
+}
+
+.photos {
+  display: inline-block;
+  float: none;
+}
+
+.photos a {
+  opacity: 0.9;
+}
+
+.photos a:hover {
+  opacity: 1;
+}
+
+figure {
+  margin: 5px;
+  padding: 0px;
 }
 
 footer {
@@ -96,6 +131,7 @@ footer {
   background-image: url('footer.jpg');
   background-size: 100%;
   background-position: 100%;
+  margin: 0px;
   width:100%;
   clear: both;
   float: left;
@@ -129,7 +165,7 @@ p {
 
 nav {
   background-color: #bfbfbf;
-  text-align: center;;
+  text-align: right;
 }
 
 .menu {
@@ -143,4 +179,6 @@ nav {
 
 .menu > li {
   display: inline-block;
+  padding-right: 30px;
+  padding-left: 30px;
 }
